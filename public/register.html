@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registro - Gestión de Cuentas Corrientes</title>
+  <link rel="stylesheet" href="/Users/PC/Desktop/carniceria--app/public/css/styles.css">
+  <!-- Librerías -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- Script de autenticación -->
+  <script type="module" src="/Users/PC/Desktop/carniceria--app/public/scripts/auth.js" defer></script>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h1 class="text-center">Registrarse</h1>
+        <form id="register-form" action="/register" method="POST">
+          <div class="form-group">
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="register-password" class="form-control" placeholder="Contraseña" required>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-user-plus"></i> Registrarse
+          </button>
+        </form>
+        <p class="text-center mt-3">
+          ¿Ya tienes cuenta? <a href="/Users/PC/Desktop/carniceria--app/public/login.html" aria-label="Iniciar sesión">Inicia sesión aquí</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
